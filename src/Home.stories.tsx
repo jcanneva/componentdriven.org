@@ -16,14 +16,6 @@ export const Default = () => <Home />;
 
 Default.story = {
   parameters: {
-    chromatic: { viewports: [375, 768, 1024, 1440] },
-  },
-};
-
-export const Mobile = () => <Home />;
-
-Mobile.story = {
-  parameters: {
     viewport: {
       defaultViewport: 'iphonex',
     },

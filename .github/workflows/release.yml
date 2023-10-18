@@ -1,0 +1,28 @@
+# .github/workflows/release.yml
+
+# Release
+name: "Release"
+
+on:
+  push:
+      branches:
+          - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository
+        uses: actions/checkout@v1
+        with:
+            fetch-depth: 0
+      - name: Set node version
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
+      - name: Install
+        run: yarn
+      - name: Release
+        uses: chromaui/action@v1
+        with:
+            projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}

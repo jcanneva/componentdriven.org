@@ -27,4 +27,4 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 ### Storybook
 
-`yarn storybook` should start Storybook and launch the browser. You can also view the published version at [chromatic.com/library?appId=5f23114b880798002203433](https://www.chromatic.com/library?appId=5f23114b880798002203433a&branch=master).
+`yarn storybook` should start Storybook and launch the browser. You can also view the published version [HERE](https://652f853af202772644d90ed5-udgqhgxdyz.chromatic.com).
